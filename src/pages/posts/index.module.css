@@ -1,0 +1,45 @@
+.post {
+  display: flex;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 650px) {
+  .post {
+    margin-bottom: 20px;
+  }
+}
+
+.post > aside {
+  width: 150px;
+  height: 200px;
+  aspect-ratio: 148 / 197;
+  background: var(--color-gray-100);
+}
+
+.post > aside > img {
+  border-radius: 4px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.post > section {
+  margin-left: 20px;
+}
+
+.post time {
+  color: var(--color-gray-medium);
+}
+
+.post > section > * + * {
+  margin-top: 15px
+}
+
+.post:hover .heading {
+  color: var(--color-blue-medium);
+}
+
+.post .summary {
+  font-size: 1.2em;
+  line-height: 1.15em;
+}

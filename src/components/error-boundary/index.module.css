@@ -1,0 +1,13 @@
+.error {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: var(--color-gray-extra-light);
+  border: solid 1px #b1b1b1;
+}
+
+.error h2 {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: crimson;
+  margin-bottom: 15px;
+}

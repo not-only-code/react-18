@@ -1,0 +1,35 @@
+.navigation {
+  position: sticky;
+  top: 20px;
+}
+
+.navigation header {
+  margin-bottom: 20px;
+}
+
+.navigation ul {
+  border-top: solid 1px #d1c1c1;
+}
+
+.navigation li {
+  border-bottom: solid 1px #d1c1c1;
+}
+
+.navigation li > a {
+  display: block;
+  padding: 15px 0;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: var(--color-gray-medium);
+}
+
+.navigation li > a:hover,
+.navigation li > a:global(.active) {
+  color: var(--color-gray-medium);
+  font-weight: 700;
+}
+
+
+.navigation li > a:global(.active) {
+  border-right: solid 4px var(--color-blue-light);
+}

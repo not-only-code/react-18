@@ -1,0 +1,31 @@
+.loading {
+  min-height: 200px;
+  height: 100%;
+  max-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.loading > svg {
+  color: rgb(97, 218, 251);
+  overflow: visible;
+  width: 8%;
+}
+
+@keyframes spinners-circular-fixed {
+  0% {
+    stroke-dashoffset: 325;
+  }
+  to{
+    stroke-dashoffset: 151;
+  }
+}
+
+.loading .circle {
+  animation: spinners-circular-fixed 1.4s linear 0s infinite normal none running;
+}
+
+

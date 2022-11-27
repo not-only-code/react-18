@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50">
+  <g xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com" data-bx-workspace="master">
+    <defs>
+      <linearGradient id="a" x1="25" x2="25" y1="8.3" y2="39.8" gradientTransform="matrix(.86 -.5 .37 .63 2 27)" gradientUnits="userSpaceOnUse">
+        <stop offset="0" style="stop-color:rgba(242,190,0,.99)"/>
+        <stop offset="1" style="stop-color:#c80101"/>
+      </linearGradient>
+    </defs>
+    <path fill-rule="evenodd" d="M50 40 32 8l-10 6 15 26h13Zm-17 0L21 19l-10 6 9 15h13ZM10 30l6 10H3l-3-5 10-5Z" clip-rule="evenodd" style="fill:url(#a)"/>
+  </g>
+</svg>
