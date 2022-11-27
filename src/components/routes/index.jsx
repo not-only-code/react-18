@@ -5,10 +5,7 @@ import ErrorBondary from '../error-boundary';
 import LinearLoader from '../linear-loader';
 import Loading from '../loading';
 
-import styles from './index.module.css';
-
 const ProductsPage = lazy(() => import('../../pages/products'));
-const PostsPage = lazy(() => import('../../pages/posts'));
 const ProfilePage = lazy(() => import('../../pages/profile'));
 
 const DefaultPage = () => {
@@ -28,8 +25,6 @@ const Switch = ({ pathname }) => {
   switch (pathname) {
     case '/products':
       return <ProductsPage />;
-    case '/posts': 
-      return <PostsPage />;
     case '/profile': 
       return <ProfilePage />;
     default:
@@ -42,7 +37,7 @@ const Routes = () => {
 
   return (
     <ErrorBondary>
-      {isPending && <LinearLoader className={styles['page-loader']} />}
+      {isPending && <LinearLoader className="page-loader" />}
       <Suspense fallback={<Loading />}>
         <Switch pathname={pathname} />
       </Suspense>

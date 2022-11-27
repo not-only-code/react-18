@@ -1,18 +1,17 @@
 
 const innerFunction = () => {
-  // throw new Error('Guacamole!');
-  // throw new Promise((resolve => resolve('cucu')));
-  throw new Promise(((resolve, reject) => reject('cucu')));
+  // throw new Error('Im a string!');
+  // throw new Promise((resolve => resolve('Im a resolved promise')));
 }
 
 const wrapperFunction = () => {
   try {
     return innerFunction();
   } catch (error) {
-    // log Instana, Sentry or whatever you want
     console.error(error);
   }
 }
 
 wrapperFunction();
-console.log('do another thing');
+
+console.log('proceed the execution');

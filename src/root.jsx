@@ -10,7 +10,7 @@ import Routes from './components/routes';
 function Root() {
   return (
     <ErrorBoundary>
-      <SWRConfig value={{ fetcher, suspense: true, revalidateIfStale: true }}>
+      <SWRConfig value={{ fetcher, suspense: true, revalidateIfStale: false }}>
         <NavigatonContextProvider>
           <Layout>
             <Routes />

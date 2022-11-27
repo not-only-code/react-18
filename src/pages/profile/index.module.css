@@ -1,22 +1,18 @@
 .profile-heading {
+  --profile-heading-height: 200px;
+
   position: relative;
-  margin: -20px -20px -20px;
-  height: 200px;
+  margin: -20px -20px 20px -20px;
+  height: var(--profile-heading-height);
   overflow: hidden;
   background-color: var(--color-gray-200);
 }
 
 @media only screen and (min-width: 750px) {
   .profile-heading {
-    height: 250px;
+    --profile-heading-height: 250px;
   }
 }
-
-/* @media only screen and (min-width: 1150px) {
-  .profile-heading {
-    height: 300px;
-  }
-} */
 
 .profile-heading > img {
   width: 100%;
@@ -43,15 +39,161 @@
   object-position: 50% 20%;
 }
 
-
 .profile-heading > hgroup {
   position: absolute;
   bottom: 30px;
   left: 30px;
+  color: white;
+}
+
+.profile-heading > hgroup > * + * {
+  margin-top: 10px
 }
 
 .profile-heading > hgroup > h2 {
   font-weight: 700;
   font-size: 2em;
+}
+
+.profile-heading > hgroup > p {
+  font-weight: 600;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-content > aside {
+  min-width: 30%;
+  width: 30%;
+  padding: 0 15px;
+}
+
+.profile-content > article {
+  flex-grow: 1;
+  padding: 0 15px;
+}
+
+.personal-data :global(.card) {
+  margin: 20px 0;
+}
+
+.personal-data :global(.label) {
+  float: right;
+}
+
+.personal-data :global(.card) > * + * {
+  display: block;
+  margin-top: 20px;
+}
+
+.personal-data quote {
+  color: var(--color-gray-medium);
+  font: italic 1.3em/1.1em 'Times New Roman', Times, serif;
+  margin-top: 40px;
+}
+
+.personal-data quote:before,
+.personal-data quote:after {
+  font-size: 2em;
+  line-height: 10px;
+}
+
+.personal-data quote:before {
+  content: '“';
+}
+
+.personal-data quote:after {
+  position: relative;
+  top: .6em;
+  content: '”';
+}
+
+.vouchers {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 20px 0;
+}
+
+aside .vouchers {
+  grid-template-columns: 1fr;
+}
+
+.voucher {
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  transition: all 70ms ease-out;
+  background-color: var(--color-gray-200);
+}
+
+.voucher:hover {
+  transform: scale(1.03);
+  background-color: var(--color-blue-medium);
+}
+
+.voucher > * + * {
+  color: var(--color-gray-medium);
+  display: block;
+  margin-top: 15px;
+}
+
+.voucher:hover > * + * {
   color: white;
+  display: block;
+  margin-top: 15px;
+}
+
+.voucher:hover > header {
+  color: white
+}
+
+.voucher header {
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.voucher > .logo {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 100px;
+  margin: 0;
+}
+
+.voucher > code {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.voucher > time {
+  font-weight: 500;
+  text-align: right;
+}
+
+.addresses {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.address {
+  display: inline-block;
+  background: var(--color-gray-100);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.address > * + * {
+  position: block;
+  margin-top: 10px;
 }

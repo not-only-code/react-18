@@ -14,11 +14,11 @@ export const suspend = (promise) => {
   return {
     read() {
       if (status === "pending") {
-        throw suspender;
+        throw suspender; // We throw here a promise
       } else if (status === "error") {
-        throw result;
+        throw result; // We throw an error
       } else if (status === "success") {
-        return result;
+        return result; // We throw the result
       }
     },
   };

@@ -1,0 +1,15 @@
+{
+  "id": 23123123,
+  "name": "John",
+  "surname": "Smith",
+  "birthDate": "1978-02-13",
+  "phoneNumber": "+34661751807",
+  "email": "jhon.roger.smith@whatever.com",
+  "gender": "male",
+  "points": 320,
+  "resume": "To non-tennis players, Stan Smith is probably best known for the line of tennis shoes which Adidas renamed after him in 1978. Although the Adidas Stan Smith shoe is not recommended for modern tennis playing, it continues to be a widely available iconic fashion brand",
+  "images": {
+    "portrait": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "heading": "https://brand.assets.adidas.com/f_auto,q_auto,fl_lossy/capi/enGB/Images/fw22-gravel-beginnersguide-header-d_143-911981.jpg"
+  }
+}

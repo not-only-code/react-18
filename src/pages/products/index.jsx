@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => (
   <article className={styles['product-card']} title={product.name}>
     <header>
       <Image src={product.image} alt={product.name} />
-      <label className={styles.price}>{product.price} €</label>
+      <label className={['label', styles.price].join(' ')}>{product.price} €</label>
     </header>
     <footer>
       <p className={styles.name}>{product.name}</p>
@@ -27,7 +27,7 @@ const Products = () => {
         <h2>Super impressive products grid</h2>
       </header>
       <div className={styles['grid-container']}>
-        {products.map(product => <ProductCard key={product.id} product={product} />)}
+        {products?.map(product => <ProductCard key={product.id} product={product} />)}
       </div>
     </>
   )

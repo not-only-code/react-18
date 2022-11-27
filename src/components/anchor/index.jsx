@@ -3,9 +3,9 @@ const clickHandler = (event) => {
 
   const pageUrl = event.currentTarget.getAttribute('href');
 
-  if (location.href.includes(pageUrl)) return;
+  if (location.href === pageUrl) return;
 
-  const navigateEvent = new CustomEvent('navigate', { detail: { pathname: pageUrl } });
+  const navigateEvent = new CustomEvent('popstate', { detail: { pageUrl } });
   window.history.pushState({ pageUrl }, '', pageUrl);
   window.dispatchEvent(navigateEvent);
 }

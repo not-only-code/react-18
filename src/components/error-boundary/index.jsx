@@ -1,8 +1,7 @@
 import React from 'react';
-import styles from './index.module.css';
 
 export const ErrorComponent = ({ message }) => (
-  <section className={ styles.error }>
+  <section className="error-boundary">
     <h2>Some error happened</h2>
     <pre>{message}</pre>
   </section>

@@ -79,5 +79,32 @@
     "colours": 4,
     "url": "https://www.adidas.co.uk/jeans-shoes/GX6952.html",
     "image": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/a1aa4b7bee3945ada2efaed900a2fea3_9366/jeans-shoes.jpg"
+  },
+  {
+    "id": "G48060",
+    "price": 80,
+    "name": "Busenitz Pro Shoes",
+    "category": "Originals",
+    "colours": 6,
+    "url": "https://www.adidas.co.uk/busenitz-pro-shoes/G48060.html",
+    "image": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/2ca0089986704cfdad3da59900e50082_9366/busenitz-pro-shoes.jpg"
+  },
+  {
+    "id": "GY0046",
+    "price": 85,
+    "name": "Teziod 2 Shoes",
+    "category": "Originals",
+    "colours": 3,
+    "url": "https://www.adidas.co.uk/treziod-2-shoes/GY0046.html",
+    "image": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/e89d37e7cb3f469ebd9faf1e00e5e5d0_9366/treziod-2-shoes.jpg"
+  },
+  {
+    "id": "GZ3958",
+    "price": 85,
+    "name": "Terrex Soulstride Trail Running Shoes",
+    "category": "Men Trail Running",
+    "colours": 4,
+    "url": "https://www.adidas.co.uk/terrex-soulstride-trail-running-shoes/GZ3958.html",
+    "image": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/fe0a7ae6c5254d9b9513ae930013a651_9366/terrex-soulstride-trail-running-shoes.jpg"
   }
 ]

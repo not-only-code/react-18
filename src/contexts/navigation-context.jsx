@@ -2,17 +2,18 @@ import { useEffect, useState, useTransition, createContext } from 'react';
 
 export const NavigatonContext = createContext();
 
-
 export const useLocationPathname = () => {
   const [isPending, startTransition] = useTransition();
   const [pathname, setPathname] = useState(window.location.pathname);
 
   useEffect(() => {
-    const onNavigate = ({ detail }) => {
-      detail?.pathname && startTransition(() => setPathname(detail.pathname) );
+    const onNavigate = ({ state, detail }) => {
+      const pageUrl = state?.pageUrl ?? detail?.pageUrl;
+
+      pageUrl && startTransition(() => setPathname(pageUrl));
     }
-    window.addEventListener('navigate', onNavigate);
-    return () => window.removeEventListener('navigate', onNavigate);
+    window.addEventListener('popstate', onNavigate);
+    return () => window.removeEventListener('popstate', onNavigate);
   }, []);
 
   return [ pathname, isPending ]

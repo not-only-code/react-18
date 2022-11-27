@@ -57,17 +57,10 @@
 .product-card > header .price {
   display: block;
   position: absolute;
+  padding: 5px 10px;
+  font-weight: 600;
   bottom: 10px;
   left: 10px;
-  line-height: 1em;
-  font-size: .95em;
-  font-weight: 600;
-  text-align: center;
-  background: white;
-  padding: 5px 10px;
-  border-radius: 4px;
-  color: var(--color-blue-medium);
-  border: solid 1px var(--color-gray-200);
 }
 
 .product-card > footer {
